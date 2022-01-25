@@ -18,7 +18,7 @@
                <img src="images/logo.png" alt="" width="125px">
            </div>
            <nav>
-               <ul class="menu-items">
+               <ul class="menu-items" id="menu-items">
                    <li><a href="#">Home</a></li>
                    <li><a href="#">Products</a></li>
                    <li><a href="#">About</a></li>
@@ -27,9 +27,11 @@
                   
                </ul>
            </nav>
+           
             <div class="cart-icon">
                 <img src="images/cart.png" alt="" width="30px" height="30px">
             </div>
+                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
          
        </div>
        
@@ -39,7 +41,7 @@
                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam non dolores dolorem, cum ducimus quis eligendi.</p>
                <a href="#" class="btn">Explore now &#8594;</a>
            </div>
-           <div class="col-2">
+           <div class="col-2 first">
                <img src="images/image1.png" alt="">
            </div>
        </div>
@@ -215,7 +217,7 @@
             </div>
         </div>
     </section>
-    <!-- ====================Featured Products Section ======================== -->
+    <!-- ====================Offer Section ======================== -->
     <section class="offer-section">
         <div class="container">
             <div class="row">
@@ -325,6 +327,17 @@
             <p class="copyright">All right Reserved &copy; Rana Arju</p>
         </div>
     </footer>
-
+    <!-- =============Some JAVSCRIPT code For responsive menu =================-->
+<script>
+    var menuItems = document.getElementById("menu-items");
+    menuItems.style.maxHeight = "0px";
+    function menuToggle() {
+        if (menuItems.style.maxHeight == "0px") {
+             menuItems.style.maxHeight = "200px";
+        }else{
+             menuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
 </body>
 </html>
