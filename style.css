@@ -332,258 +332,56 @@ small {
     color: #fff;
 }
 
-
-/*  =====================================================
-                Responsive All Devices 
- =========================================================*/
-@media only screen and (max-width: 1100px) {
-
-    .menu-items li a {
-        font-size: 18px;
-    }
-
-    .cart-icon img {
-        width: 28px;
-        height: 28px;
-    }
-
-    .section-title {
-        font-size: 30px;
-    }
-
-    .footer-col-3,
-    .footer-col-4 {
-        flex-basis: 10%;
-    }
-
-    .footer-col-1,
-    .footer-col-2,
-    .footer-col-3,
-    .footer-col-4 {
-        min-width: 200px;
-    }
+/*==============================================
+                SHOP PAGE STYLE
+===============================================*/
+.shop-title {
+    margin-top: 30px;
 }
 
-@media only screen and (max-width: 1100px) {
-    .col-2 h1 {
-        font-size: 40px;
-    }
+.row-1 {
+    text-align: right;
+    margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 896px) {
-    .logo img {
-        width: 50%;
-    }
-
-    .menu-items li {
-        margin-right: 10px;
-    }
-
-    .menu-items li a {
-        font-size: 16px;
-    }
-
-    .col-2 h1 {
-        font-size: 35px;
-    }
-
-    .col-3 img {
-        width: 95%;
-    }
-
-    .btn {
-        font-size: 16px;
-    }
-
-    .col-4 {
-        flex-basis: 30%;
-    }
-
-    .offer-section h2 {
-        font-size: 40px;
-    }
-
-    .footer-col-1,
-    .footer-col-2,
-    .footer-col-3,
-    .footer-col-4 {
-        min-width: 300px;
-        flex-basis: 48%;
-    }
-
-    .testimonial-section .col-3 {
-        flex-basis: 29%;
-        min-width: 200px;
-        margin-right: 2px;
-    }
-
-    .copyright {
-        font-size: 16px;
-    }
+.row-1 select {
+    border: 1px solid #ff523b;
+    padding: 5px 8px;
+    outline: 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 20px;
 }
 
-@media only screen and (max-width: 800px) {
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-
-    nav ul {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
-    }
-
-    nav ul li {
-        display: block !important;
-        margin-right: 50px !important;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        color: #fff !important;
-    }
+.row-1 select option {
+    font-size: 16px;
+    text-transform: capitalize;
 }
 
-@media only screen and (max-width: 768px) {
-    .menu-icon {
-        width: 25px;
-    }
-
-    .section-title {
-        font-size: 25px;
-    }
-
-    .col-2 h1 {
-        font-size: 30px;
-    }
-
-    .col-3 {
-        min-width: 200px;
-    }
-
-    .col-4 {
-        flex-basis: 45%;
-    }
-
-    .col-4 h2 {
-        font-size: 16px;
-    }
-
-    .offer-section h2 {
-        font-size: 30px;
-    }
-
-    .testimonial-section .col-3 {
-        flex-basis: 45%;
-    }
-
-    .footer-col-1 .app-logo img {
-        width: 110px;
-    }
-
-    .footer-col-2 img {
-        width: 160px;
-    }
-
-    .footer-section h3 {
-        font-size: 16px;
-    }
+.shop-title::after {
+    bottom: -5px;
 }
 
-@media only screen and (max-width: 650px) {
-    .col-2 {
-        flex-basis: 100%;
-        text-align: center;
-    }
-
-    .first {
-        order: -1;
-    }
-
-    .col-3 {
-        flex-basis: 45%;
-    }
-
-    .col-2 {
-        flex-basis: 100%;
-    }
-
-    .footer-col-1,
-    .footer-col-2,
-    .footer-col-3,
-    .footer-col-4 {
-        min-width: 200px;
-    }
-
-    .col-2 img {
-        padding: 0;
-    }
-
-    .col-4 {
-        flex-basis: 100%;
-    }
-
-    .rating .fas,
-    .rating .far {
-        font-size: 14px;
-    }
-
-    .offer-section {
-        margin-top: 0;
-    }
-
-    .testimonial-section .col-3 {
-        flex-basis: 100%;
-    }
+.pagination {
+    margin: 0 auto 80px;
 }
 
-@media only screen and (max-width: 450px) {
-    .col-2 h1 {
-        font-size: 25px;
-    }
+.pagination span {
+    margin-left: 5px;
+    font-size: 18px;
+    border: 2px solid #ff523b;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+}
 
-    .section-title {
-        font-size: 20px;
-    }
+.pagination span:hover {
+    background-color: #ff523b;
+    color: #fff;
 
-    .col-3 {
-        flex-basis: 100%;
-    }
-
-    .offer-section h2 {
-        font-size: 26px;
-    }
-
-    .categories-section .col-3 img {
-        width: 100%;
-    }
-
-    .testimonial-section h3 {
-        font-size: 16px;
-    }
-
-    .testimonial-section .col-3 img {
-        width: 70%;
-    }
-
-    .footer-col-1,
-    .footer-col-2,
-    .footer-col-3,
-    .footer-col-4 {
-        flex-basis: 100%;
-    }
-    .footer-col-1{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .copyright{
-        font-size: 14px;
-    }
 }
